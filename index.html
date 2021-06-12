@@ -1,0 +1,29 @@
+<html>
+  <h1>Tunggu yah Mekatrons</h1>
+</html>
+
+<script type="text/javascript">
+
+var urls = new Array();
+urls[0] = "https://drive.google.com/file/d/1AnSdcXDkFiSlhSlhmZnOTKcFI_2pEOXC/view?usp=sharing";
+urls[1] = "https://drive.google.com/file/d/1t04P4SISVMIN69HrmK8fSQu0PT1I08oa/view?usp=sharing";
+urls[2] = "https://drive.google.com/file/d/1zBkzO9MdFNDgYvfd1K4IVFJZULUR2qZA/view?usp=sharing";
+urls[3] = "https://drive.google.com/file/d/1eWe6qz1QGpYd2xiNOwZRV11EJRShRUqi/view?usp=sharing";
+urls[4] = "https://drive.google.com/file/d/1Pb2sTJFnkgrLwg7WrT1RspZMj_Axhk08/view?usp=sharing";
+urls[5] = "https://drive.google.com/file/d/15Z9enWKkv_2lDd5xvQngB6G0mk0WK95Z/view?usp=sharing";
+
+
+if (localStorage.getItem('no') == null) {
+var random = Math.floor(Math.random()*urls.length);
+var no = random.toString();
+localStorage.setItem('no', no);
+}
+
+else {
+var random = localStorage.getItem('no')*1;
+}
+
+window.location = urls[random];
+
+</script>
+</html>
